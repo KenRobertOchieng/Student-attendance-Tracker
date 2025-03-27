@@ -1,9 +1,58 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "students": [
+    {
+      "id": "3",
+      "name": "Fiona",
+      "class_no": "49",
+      "attendance": "present"
+    },
+    {
+      "id": "0",
+      "name": "Susan",
+      "class_no": "111",
+      "attendance": "late"
+    },
+    {
+      "id": "00ad",
+      "name": "Erick",
+      "class_no": "44",
+      "attendance": "absent"
+    },
+    {
+      "id": "57ea",
+      "name": "Kasongo",
+      "class_no": "231",
+      "attendance": "absent"
+    },
+    {
+      "id": "b6f2",
+      "name": "Martin",
+      "class_no": "21",
+      "attendance": "absent"
+    },
+    {
+      "id": "b2c5",
+      "name": "Okoth",
+      "class_no": "67",
+      "attendance": "absent"
+    },
+    {
+      "id": "d95b",
+      "name": "Benson",
+      "class_no": "204",
+      "attendance": "absent"
+    },
+    {
+      "id": "ad4f",
+      "name": "George",
+      "class_no": "444",
+      "attendance": "absent"
+    },
+    {
+      "id": "8b79",
+      "name": "Paul",
+      "class_no": "211",
+      "attendance": "late"
+    }
+  ]
 }
