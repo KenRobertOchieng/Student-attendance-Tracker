@@ -1,0 +1,95 @@
+.upperText{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* margin-left:37% ;
+    margin-right:38% ; */
+}
+h1{
+    padding-left: 23px;
+    border-radius: 10px;
+    background-color: wheat;
+    border: solid 1px;
+    font-size: 26px;
+    color:black;
+}
+.theeUl{
+     align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+} 
+.theeLi{
+    border-radius: 9px;
+    padding: 7px;
+    height: 45px;
+    margin: 20px;
+    display: flex;
+    width: 435px;
+    font-size: 30px;
+    list-style: none;
+    border: solid 3px;
+}
+.mybtns{
+    border-radius: 6px;
+    margin:10px;
+    display: flex;
+}
+input{
+    border-radius: 8px;
+    height: 30px;
+    border: solid 3px;
+    margin: 19px;
+    display: block;
+}
+.inputs{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    /* margin-top: 70px;
+    margin-left:46% ;
+    margin-right:45% ; */
+}
+body{
+    height: 100vh;
+    background-color:grey;
+}
+.myBtn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.btttn{
+    border-radius: 8px;
+    width: 80px;
+    height: 50px;
+}
+.btttn:hover{
+    background: aqua;
+}
+.container{
+    height: 100vh;
+}
+.myClick{
+    border-radius: 9px;
+    margin-left: 24px;
+    font-size: 30px;
+
+}
+.myClick:hover{
+    background-color: red;
+}
+#theeName{
+    color:black;
+    background-color:antiquewhite;
+}
+#theeClass{
+    color: black;
+    background-color: antiquewhite;
+}
+.myEdit{
+    margin: 5px;
+    border-radius: 7px;
+
+}
