@@ -53,14 +53,14 @@ function renderingStudents(student){
             name:newPrompt
         }
         
-        fetch(`${student.id}`,{
+        fetch(`https://student-attendance-tracker-mu.vercel.app/students/${student.id}`,{
             method:"PATCH",
             headers:{
                 'Content-Type':'application/json'
             },
             body:JSON.stringify(newName)
         })
-        .then(res=>res.json())
+        .then(response=>response.json())
         .then(student=>{
             student.id
             
@@ -70,13 +70,12 @@ function renderingStudents(student){
     const myAttendance={
         attendance:'present'
     }
-    btn1Create.addEventListener("click",(e)=>{
-        e.preventDefault()
+    btn1Create.addEventListener("click",()=>{
         if(student.attendance!=="present" ){
             alert(`Ooops!!!...${student.name} is actually ${student.attendance}.`)
             alert("Change it please")
         }
-        fetch(`https://student-attendance-tracker-mu.vercel.app/students${student.id}`,{
+        fetch(`https://student-attendance-tracker-mu.vercel.app/students/${student.id}`,{
             method:"PATCH",
             headers:{
                 'Content-Type':'application/json'
@@ -94,13 +93,12 @@ function renderingStudents(student){
         attendance:'absent'
     }
 
-    btn2Create.addEventListener("click",(e)=>{
-        e.preventDefault()
+    btn2Create.addEventListener("click",()=>{
         if(student.attendance!=="absent"){
             alert(`Ooops!!!...${student.name} is actually ${student.attendance}.`)
             alert("Change it please")
         }
-        fetch(`https://student-attendance-tracker-mu.vercel.app/students${student.id}`,{
+        fetch(`https://student-attendance-tracker-mu.vercel.app/students/${student.id}`,{
             method:"PATCH",
             headers:{
                 'Content-Type':'application/json'
@@ -118,14 +116,13 @@ function renderingStudents(student){
         attendance:'late'
     }
 
-    btn3Create.addEventListener("click",(e)=>{
-        e.preventDefault()
+    btn3Create.addEventListener("click",()=>{
         if(student.attendance!=="late"){
             alert(`Oooops!!!!...${student.name} is actually ${student.attendance}.`)
             alert("Change it please")
 
         }
-        fetch(`https://student-attendance-tracker-mu.vercel.app/students${student.id}`,{
+        fetch(`https://student-attendance-tracker-mu.vercel.app/students/${student.id}`,{
             method:"PATCH",
             headers:{
                 'Content-Type':'application/json'
@@ -140,7 +137,7 @@ function renderingStudents(student){
     })
 
     createClick.addEventListener("click",()=>{
-        fetch(`https://student-attendance-tracker-mu.vercel.app/students${student.id}`,{
+        fetch(`https://student-attendance-tracker-mu.vercel.app/students/${student.id}`,{
             method:"DELETE"
         })
         .then(()=>{
@@ -153,8 +150,7 @@ function renderingStudents(student){
 function myAdd(){
     
     const bttn=document.getElementById("bttn")
-    bttn.addEventListener("click",(e)=>{
-        e.preventDefault()
+    bttn.addEventListener("click",()=>{
         const namei=document.getElementById("theeName").value
         const classi=document.getElementById("theeClass").value
         if(namei==="" && classi===""){
@@ -164,7 +160,7 @@ function myAdd(){
         const theeStudent={
             name:namei,
             class_no:classi,
-            attendance:"absent"
+            attendance:"late"
             
         };
             fetch('https://student-attendance-tracker-mu.vercel.app/students',{
