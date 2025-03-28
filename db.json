@@ -48,6 +48,7 @@
       "class_no": "444",
       "attendance": "absent"
     },
+
     {
       "id": "8b79",
       "name": "Paul",
@@ -55,4 +56,6 @@
       "attendance": "late"
     }
   ]
+
 }
+
